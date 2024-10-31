@@ -156,7 +156,7 @@
         <div class="w-[555px] flex flex-col space-y-6 items-start">
           <div class="w-full flex flex-col space-y-2 text-[20px] text-second-gray dark:text-white font-['Poppins']">
             <div class="flex items-center">
-              Generate a App lightning fast⚡.
+              Generate Apps lightning fast ⚡.
             </div>
           </div>
 
