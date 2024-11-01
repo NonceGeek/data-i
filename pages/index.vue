@@ -294,11 +294,15 @@ const initRobot = () => {
   let intervalId = null;
   const svg = container.querySelector('svg');
   
+  // 保存初始的六爻图案
+  const initialHexagram = currentHexagram;
+  
   // Draw initial hexagram
   drawHexagram(s, currentHexagram);
   
   svg.addEventListener('mouseenter', () => {
-    console.log('mouseenter');
+    if (intervalId) return; // 防止多次启动interval
+    
     intervalId = setInterval(() => {
       s.clear();
       currentHexagram = hexagrams[Math.floor(Math.random() * hexagrams.length)];
@@ -307,17 +311,16 @@ const initRobot = () => {
   });
 
   svg.addEventListener('mouseleave', () => {
-    console.log('mouseleave');
-    clearInterval(intervalId);
-    intervalId = null;
+    if (intervalId) {
+      clearInterval(intervalId);
+      intervalId = null;
+    }
     
-    // Add a small delay before redrawing to ensure clean state
-    setTimeout(() => {
-      s.clear();
-      drawHexagram(s, currentHexagram);
-    }, 500);
+    s.clear();
+    // 恢复到初始状态
+    currentHexagram = initialHexagram;
+    drawHexagram(s, currentHexagram);
   });
-
 };
 
 // Initialize robot when component is mounted
