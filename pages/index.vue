@@ -28,8 +28,8 @@
               <h1 class="text-6xl font-bold">data I</h1>
               <!--<span class="w-[450px] text-[50px] leading-none font-['Poppins'] font-medium tracking-[0.6px]"><b>Move Game
                 Kit</b></span>-->
-              <span class="w-[600px] text-[20px] leading-tight font-['Poppins']">AI Tool Kit.</span>
-              <span class="w-[600px] text-[20px] leading-tight font-['Poppins']">Preparing for the NEXT Generation.</span>
+              <span class="w-[700px] text-[20px] leading-tight font-['Poppins']">AI Tool Kit preparing for the NEXT Generation.</span>
+              <span class="w-[700px] text-[20px] leading-tight font-['Poppins']">AI should collaborate with human 🤝, not fight against human ⚔️.</span>
             </div>
           </div>
           <div class="flex items-center space-x-2 text-third-gray dark:text-gray-4 text-[20px]">
@@ -161,11 +161,11 @@
           </div>
 
           <TheButton text="Launch App" :colored-border="true" href="https://d1v.ai" />
-          <TheButton text="Author" :colored-border="true" href="https://x.com" />
+          <TheButton text="Author" :colored-border="true" href="https://x.com/aboutdreamfly" />
         </div>
 
         <div class="title text-black-2 dark:text-white text-[30px] font-['Poppins'] font-semibold flex items-center">
-          <span>dataI App Generator </span>
+          <span>dataI App Generator 📦</span>
 
         </div>
 
